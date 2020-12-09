@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/zerofive.css" />
+    <link rel="stylesheet" href="css/main.css" />
   <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
   <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -38,14 +39,26 @@
 </head>
 <body>
 
-   <div class="jumbotron text-center" style="margin-bottom:0;;color: rgb(0, 132, 255) ;background-color: white">
+   <div class="jumbotron text-center" style="margin-bottom:0;color: rgb(0, 132, 255) ;background-color: white">
       <h1>我的自习</h1>
     </div>
-    
-
+   <div class="container mt-3">
+   <div class="clearfix" style="margin-bottom: 150px;">
+       <form>
+           <div class="input-group mb-2">
+               <label class="text" >名字：</label>
+               <input type="text" placeholder="你的名字(✪ω✪)" class="form-control" style="border-radius:100px">
+           </div>
+       </form>
+   </div>
+       <div class="parent" style="margin-bottom: 150px;">
+           <a href="#">查询</a>
+       </div>
+   </div>
 <!-- 导航居中 -->
+   <!--
     <div class="container" style="width: 100%;">
-        <ul class="nav nav-pills nav-justified justify-content-center" ">
+        <ul class="nav nav-pills nav-justified justify-content-center">
           <li class="nav-item">
             <a class="nav-link active"  data-toggle="pill" href="#" >全部</a>
           </li>
@@ -59,8 +72,11 @@
             <a class="nav-link" data-toggle="pill" href="#">已完成</a>
           </li>
         </ul><br>
-      </div>
+      </div>-->
 <!--card 1-->
+   <div class="jumbotron text-center" style="margin-bottom:0;color: rgb(0, 132, 255) ;background-color: white">
+       <h3>我发布的</h3>
+   </div>
         <div class="container" style="color: #53443d; margin-bottom: 30px;margin-top: 20px;">
           <div class="row" >
   
@@ -124,6 +140,10 @@
         </div>
 
 <!--card 2-->
+
+   <div class="jumbotron text-center" style="margin-bottom:0;color: rgb(0, 132, 255) ;background-color: white">
+       <h3>我加入的</h3>
+   </div>
 <div class="container" style="color: #53443d">
   <div class="row" >
 
