@@ -2,12 +2,24 @@ new Vue({
     el: '#app2',
     data() {
         return {
-            username: 233,
-            info: null,
-            info2: null,
-            stime: null,
-            etime: null,
-            remarks: null
+            Location: null,
+            Time: null,
+            info: null
         }
+    },
+    methods:{
+        search: function(){
+            axios({
+                method:'post',
+                url:'http://47.113.122.41:8080/test/search',
+                data: {
+                    location: this.Location,
+                    time: this.Time
+                },
+                responseType:'json'
+            })
+                .then(response => (this.info = response.data))
+        }
+
     },
 })

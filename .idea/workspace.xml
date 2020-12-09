@@ -21,7 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="69ea8472-d4e5-4fcd-af7a-b6bc993bad08" name="Default Changelist" comment="changed cdn address">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my.html" beforeDir="false" afterPath="$PROJECT_DIR$/my.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/join.html" beforeDir="false" afterPath="$PROJECT_DIR$/join.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/join.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/join.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +70,7 @@
       <workItem from="1607257655225" duration="2496000" />
       <workItem from="1607330300539" duration="15127000" />
       <workItem from="1607478987921" duration="1084000" />
-      <workItem from="1607480081845" duration="4290000" />
+      <workItem from="1607480081845" duration="6661000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1607479064693</created>
