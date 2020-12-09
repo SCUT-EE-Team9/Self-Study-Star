@@ -1,0 +1,92 @@
+/*输入框排版*/
+label {
+    margin-right: 20px;
+    font-size: x-large;
+    color:deepskyblue;
+  }
+  div input {
+        border-top-right-radius: 30px; 
+        border-top-left-radius: 30px; 
+        border-bottom-right-radius:30px;
+        border-bottom-left-radius:30px;}
+         #input::-webkit-input-placeholder { /* WebKit browsers 适配谷歌 */
+            color: #be1f1f;
+        }
+        #input:-moz-placeholder { /* Mozilla Firefox 4 to 18 适配火狐 */
+            color:#be1f1f;
+        }
+        #input::-moz-placeholder { /* Mozilla Firefox 19+ 适配火狐 */
+            color:#be1f1f;
+        }
+        #input:-ms-input-placeholder { /* Internet Explorer 10+  适配ie*/
+            color: #be1f1f;
+        }
+
+/*标题鼠标悬浮变色*/
+   h1:hover { 
+    color: rgba(255, 99, 71, 0.5);
+}
+
+/*流光按钮*/
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+
+a {
+    /* 相对定位 */
+    position: relative;
+    width: 30%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #fff;
+    /* 圆角属性 */
+    border-radius: 50px;
+    /* 背景渐变色 */
+    background-image: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
+    /* 背景渐变色大小 */
+    background-size: 400%;
+    z-index: 1;
+}
+
+/* 下面设计 发光效果 */
+button::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    border-radius: 50px;
+    /* 背景渐变色 */
+    background-image: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
+    /* 背景渐变色大小 */
+    background-size: 400%;
+    /* 元素的位置 底层或者顶层  -值表示底层 + 值表示顶层 */
+    z-index: -1;
+    /* 设置模糊度 显示发光效果 */
+    filter: blur(20px);
+}
+
+a:hover {
+    /* 动画 名称 时间 infinite 是无限次播放 */
+    animation: sun 8s infinite;
+}
+
+a:hover::before {
+    animation: sun 8s infinite;
+}
+
+@keyframes sun {
+    100% {
+        /* 背景位置 */
+        background-position: -400% 0;
+    }
+}

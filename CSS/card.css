@@ -1,0 +1,30 @@
+ div{
+   color: #53443d;
+ }
+ h3{ width: auto;
+     height: auto;
+     margin-top: 80px;
+     margin-left: 25px;
+     border: 1px solid#61be90;
+    /*垂直方向文字*/
+    writing-mode: vertical-rl;
+    /*居中文字*/
+    text-align: center;
+    display:flex;
+    flex-direction:column; 
+    justify-content:center;
+    letter-spacing: 25px;
+  }
+  .card_container{
+    background-color: LightCoral;
+    border-radius: 25px;
+  }
+  .aa{
+    margin-top: 10px;
+    margin-bottom:10px;
+    text-align:center;
+    border-radius: 25px;
+    background-color:WhiteSmoke ;
+    border: 1px solid#dd7e7e
+  }
+ 

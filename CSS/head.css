@@ -1,0 +1,34 @@
+body{
+	
+    color: green;
+}
+h1{
+    color:tomato;
+}
+/*设置标题鼠标悬浮样式（类选择器）*/
+h1:hover { 
+    color: rgba(255, 99, 71, 0.5);
+}
+label {
+  color: dodgerblue;
+  margin: auto;
+  width: 12em;
+}
+/*设置不可选，可选，默认元素如按钮的样式*/
+:required {
+    outline: 2px solid red;
+}
+:optional {
+    outline: 3px;
+}
+:default {
+    outline: 3px solid red;
+}
+/*设置用户输入“合法“与”非法“的样式*/
+input:valid {
+    border: 2px solid rgb(0, 81, 255) 
+}
+
+input:invalid {
+    border: 2px solid red;
+}
