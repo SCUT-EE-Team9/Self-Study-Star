@@ -2,139 +2,102 @@
 <html>
 <head>
     <title>发布自习</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css"/>
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link href="https://cdn.staticfile.org/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="http://cdn.staticfile.org/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdn.staticfile.org/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
     <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
 </head>
 <body>
-
 <div class="jumbotron text-center" style="margin-bottom:0;color: rgb(0, 132, 255) ;background-color: white">
     <h1>发布自习</h1>
 </div>
-
-    <div id="app1">
-
-        <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;">
-            <div class="toast" style="position: absolute; top: 0; right: 0;">
-                <div class="toast-header">
-                    <img src="..." class="rounded mr-2" alt="...">
-                    <strong class="mr-auto">Bootstrap</strong>
-                    <small>11 mins ago</small>
-                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+<div id="app1">
+    <div class="container mt-3">
+        <div class="clearfix" style="margin-bottom: 150px;">
+            <form>
+                <div class="input-group mb-3">
+                    <label class="text">用户名</label>
+                    <!--<div class="input-group-prepend " >
+                               <span class="input-group-text" >时间:</span>
+                             </div>-->
+                    <input type="text" v-model="username" placeholder="你的名字(〃'▽'〃)" class="form-control" style="border-radius:100px" />
                 </div>
-                <div class="toast-body">
-                    Hello, world! This is a toast message.
+            </form>
+        </div>
+        <div class="clearfix" style="margin-bottom: 150px">
+            <form>
+                <div class="input-group mb-3">
+                    <label class="text">开始时间：</label>
+                    <!--<div class="input-group-prepend " >
+                               <span class="input-group-text" >时间:</span>
+                             </div>-->
+                    <input type="datetime-local" v-model="stime" placeholder="请输入时间(*^▽^*)" class="form-control" style="border-radius:100px" />
                 </div>
-            </div>
+            </form>
         </div>
-
-<div class="container mt-3" >
-    <div class="clearfix" style="margin-bottom: 150px;">
-        <form>
-            <div class="input-group mb-3" >
-                <label class="text" >用户名</label>
-                <!--<div class="input-group-prepend " >
-                  <span class="input-group-text" >时间:</span>
-                </div>-->
-                <input type="text" v-model="username" placeholder="你的名字(〃'▽'〃)" class="form-control" style="border-radius:100px">
-            </div>
-        </form>
-    </div>
-
-
-    <div class="clearfix" style="margin-bottom: 150px">
-        <form>
-            <div class="input-group mb-3" >
-                <label class="text" >开始时间：</label>
-                <!--<div class="input-group-prepend " >
-                  <span class="input-group-text" >时间:</span>
-                </div>-->
-                <input type="datetime-local" v-model="stime" placeholder="请输入时间(*^▽^*)" class="form-control" style="border-radius:100px">
-            </div>
-        </form>
-    </div>
-
-
-    <div class="clearfix" style="margin-bottom: 150px">
-        <form>
-            <div class="input-group mb-3" >
-                <label class="text" >结束时间：</label>
-                <!--<div class="input-group-prepend " >
-                  <span class="input-group-text" >时间:</span>
-                </div>-->
-                <input type="datetime-local" v-model="etime" placeholder="请输入时间(*^▽^*)" class="form-control" style="border-radius:100px">
-            </div>
-        </form>
-    </div>
-    {{ stime }}
-
-    <div class="clearfix" style="margin-bottom: 150px">
-        <form>
-            <div class="input-group mb-3">
-                <label class="text" >地点：</label>
-                <!--<div class="input-group-prepend" >
-                  <span class="input-group-text">地点:</span>
-                </div>-->
-                <input type="text" v-model="Location" placeholder="请输入地点(✪ω✪)" class="form-control" style="border-radius:100px" list="urllist">
-            </div>
-        </form>
-    </div>
-
-    <!--<div class="clearfix" style="margin-bottom: 150px;">
-      <form>
-        <div class="input-group mb-3">
-          <label class="text" >备注：</label>
-           <textarea name="text" rows="2" cols="142"  style="border-radius:25px"></textarea>
+        <div class="clearfix" style="margin-bottom: 150px">
+            <form>
+                <div class="input-group mb-3">
+                    <label class="text">结束时间：</label>
+                    <!--<div class="input-group-prepend " >
+                               <span class="input-group-text" >时间:</span>
+                             </div>-->
+                    <input type="datetime-local" v-model="etime" placeholder="请输入时间(*^▽^*)" class="form-control" style="border-radius:100px" />
+                </div>
+            </form>
+        </div> {{ stime }}
+        <div class="clearfix" style="margin-bottom: 150px">
+            <form>
+                <div class="input-group mb-3">
+                    <label class="text">地点：</label>
+                    <!--<div class="input-group-prepend" >
+                               <span class="input-group-text">地点:</span>
+                             </div>-->
+                    <input type="text" v-model="Location" placeholder="请输入地点(✪ω✪)" class="form-control" style="border-radius:100px" list="urllist" />
+                </div>
+            </form>
         </div>
-      </form>
-    </div>-->
-
-    <div class="clearfix" style="margin-bottom: 150px">
-        <form>
+        <!--<div class="clearfix" style="margin-bottom: 150px;">
+          <form>
             <div class="input-group mb-3">
-                <label class="text" >备注：</label>
-                <!--<div class="input-group-prepend" >
-                  <span class="input-group-text">地点:</span>
-                </div>-->
-                <input type="text" v-model="remarks" placeholder="此处可不填(〃'▽'〃)" class="form-control" style="border-radius:100px">
+              <label class="text" >备注：</label>
+               <textarea name="text" rows="2" cols="142"  style="border-radius:25px"></textarea>
             </div>
-        </form>
+          </form>
+        </div>-->
+        <div class="clearfix" style="margin-bottom: 150px">
+            <form>
+                <div class="input-group mb-3">
+                    <label class="text">备注：</label>
+                    <!--<div class="input-group-prepend" >
+                               <span class="input-group-text">地点:</span>
+                             </div>-->
+                    <input type="text" v-model="remarks" placeholder="此处可不填(〃'▽'〃)" class="form-control" style="border-radius:100px" />
+                </div>
+            </form>
+        </div>
     </div>
+    <!--<div style="text-align:center">
+  <div class="jumbotron text-center" style="margin-bottom:0;background-color:#fff;">
+ <button type="submit" class="btn btn-primary" >发布</button>
+ </div>
+ </div>-->
+    <!--流光按钮-->
+    <div class="parent" style="margin-top: 150px">
+        <a v-on:click="publish">发布</a>
+    </div> {{ info }}
+    <!--与地点项用ID关联-->
+    <datalist id="urllist"> <option value="博学楼">博学楼</option> <option value="33号楼">33号楼</option> <option value="34号楼">34号楼</option> </datalist>
 </div>
-
-
-<!--<div style="text-align:center">
- <div class="jumbotron text-center" style="margin-bottom:0;background-color:#fff;">
-<button type="submit" class="btn btn-primary" >发布</button>
-</div>
-</div>-->
-
-<!--流光按钮-->
-<div class="parent" style="margin-top: 150px">
-    <a v-on:click="publish">发布</a>
-</div>
-{{ info }}
-<!--与地点项用ID关联-->
-<datalist id="urllist">
-    <option value="博学楼">博学楼</option>
-    <option value="33号楼">33号楼</option>
-    <option value="34号楼">34号楼</option>
-</datalist>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/axios"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
+<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
 <script src="js/publish.js"></script>
-
-
 </body>
-
 </html>
