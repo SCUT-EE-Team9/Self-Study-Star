@@ -11,7 +11,7 @@ new Vue({
         search: function(){
             axios({
                 method:'post',
-                url:'http://47.113.122.41:8080/test/search',
+                url:'http://121.4.79.92:8080/test/search',
                 data: {
                     location: this.Location,
                     time: this.Time
