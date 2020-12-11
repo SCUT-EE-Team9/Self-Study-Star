@@ -3,9 +3,8 @@
  }
  h3{ width: auto;
      height: auto;
-     margin-top: 80px;
-     margin-left: 25px;
-     border: 1px solid#61be90;
+     margin-top: 90px;
+     margin-left:20%;
     /*垂直方向文字*/
     writing-mode: vertical-rl;
     /*居中文字*/

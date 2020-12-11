@@ -15,7 +15,6 @@
     <script src="https://cdn.staticfile.org/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
     <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
     <script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
-</head>
 <body>
 <div id="app2">
 <div class="jumbotron text-center" style="margin-bottom:150px;;color: rgb(0, 132, 255) ;background-color: white">
@@ -84,23 +83,23 @@
     <div v-for="i in info">
     <div class="container card_container" style="margin-top:25px;">
         <div class="row" >
-            <div class="col-md-10" style="background-color: #dedef8;box-shadow:
+            <div class="col-md-10  col-sm-10 col-10" style="background-color: #dedef8;box-shadow:
          inset 1px -1px 1px #444, inset -1px 1px 1px #444;border-radius:25px;">
                 <div class="row" >
-                    <div class="col-md-12" style="background-color:#dd7e7e;
+                    <div class="col-md-12 col-sm-12 col-12" style="background-color:#dd7e7e;
                box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444; border-radius: 25px;">
                         <div class="row">
-                            <div class="col-md-4" style="background-color: #dd7e7e;
+                            <div class="col-md-4 col-sm-4 col-4" style="background-color: #dd7e7e;
              border-top-left-radius:25px;">
                                 <p class="font-weight-bold" style="font-size: 30px;text-align:center;
-               text-align:right;text-align:justify;margin-top: 40px;">加入人数</p>
-                                <p class="font-weight-bold" style="font-size: 50px; color: #FFF;margin-left: 40px;">
+               text-align:right;text-align:justify; margin-top: 20%;margin-left: 27%;">加入人数</p>
+                                <p class="font-weight-bold" style="font-size: 50px; color: #FFF;margin-left: 26%;">
                                     {{ i.joined }}
                                 </p>
                             </div>
-                            <div class="col-md-8" style="background-color:#dd7e7e;">
+                            <div class="col-md-8  col-sm-8 col-8" style="background-color:#dd7e7e;">
                                 <div class="aa" style="font-size: larger;"><p>{{ i.stime }}</p></div>
-                                <div style="text-align: center; font-size: larger; font-style: italic;font-weight:bold;
+                                <div class="aa" style="text-align: center; font-size: larger; font-style: italic;font-weight:bold;
                  background-color:#dd7e7e;margin-top:0;margin-bottom:0;border-radius: 0;"><p>to</p></div>
                                 <div class="aa" style="font-size: larger;"><p>{{ i.etime }}</p></div>
                                 <div class="aa" style="font-size: 30px;"><p>{{ i.location }}</p></div>
@@ -109,12 +108,12 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12" style="background-color:WhiteSmoke; border-bottom-left-radius:25px;height:60px;">
+                    <div class="col-md-12 col-sm-12 col-12" style="background-color:WhiteSmoke; border-bottom-left-radius:25px;height:60px;">
                         <h4 style="font-size: 30px; font-weight: bold; margin-top:10px;">备注：{{ i.remarks }}</h4>
                     </div>
                 </div>
             </div>
-            <div class="col-md-2" style="background-color:#61be90; flex: auto; border-top-right-radius:25px;border-bottom-right-radius:25px;">
+            <div class="col-md-2 col-sm-2 col-2" style="background-color:#61be90; flex: auto; border-top-right-radius:25px;border-bottom-right-radius:25px;">
                 <h3 class="text-center">{{ i.finished }}</h3>
             </div>
         </div>
