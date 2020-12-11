@@ -12,7 +12,7 @@ new Vue({
             axios({
                 method:'post',
                 //url:'http://127.0.0.1:8079/my/published',
-                url:'http://121.4.79.92:8080/test/search',
+                url:'http://121.4.79.92:8080/my/published',
                 data: {
                     username:this.username
                 },
@@ -22,7 +22,7 @@ new Vue({
             axios({
                 method:'post',
                 //url:'http://127.0.0.1:8079/my/joined',
-                url:'http://121.4.79.92:8080/test/search',
+                url:'http://121.4.79.92:8080/my/joined',
                 data: {
                     username:this.username
                 },

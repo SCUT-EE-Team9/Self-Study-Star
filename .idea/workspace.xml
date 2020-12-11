@@ -19,11 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69ea8472-d4e5-4fcd-af7a-b6bc993bad08" name="Default Changelist" comment="changed server url">
-      <change afterPath="$PROJECT_DIR$/js/my.js" afterDir="false" />
+    <list default="true" id="69ea8472-d4e5-4fcd-af7a-b6bc993bad08" name="Default Changelist" comment="updated my.html &amp; my.js">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/join.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/join.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my.html" beforeDir="false" afterPath="$PROJECT_DIR$/my.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/my.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/my.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/publish.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/publish.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +72,7 @@
       <workItem from="1607330300539" duration="15127000" />
       <workItem from="1607478987921" duration="1084000" />
       <workItem from="1607480081845" duration="10950000" />
-      <workItem from="1607657313937" duration="2574000" />
+      <workItem from="1607657313937" duration="3256000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1607479064693</created>
@@ -116,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607571258669</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="updated my.html &amp; my.js">
+      <created>1607665516446</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607665516446</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,7 +148,8 @@
     <MESSAGE value="updated &quot;join&quot;" />
     <MESSAGE value="bugs fixed" />
     <MESSAGE value="changed server url" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed server url" />
+    <MESSAGE value="updated my.html &amp; my.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated my.html &amp; my.js" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607480134753">
