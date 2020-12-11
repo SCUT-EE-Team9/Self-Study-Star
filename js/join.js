@@ -11,6 +11,7 @@ new Vue({
         search: function(){
             axios({
                 method:'post',
+                //url:'http://localhost:8079/test/search',
                 url:'http://121.4.79.92:8080/test/search',
                 data: {
                     location: this.Location,
@@ -18,7 +19,7 @@ new Vue({
                 },
                 responseType:'json'
             })
-                .then(response => (this.info = response.data))
+                .then(response => (this.info = response.data.data))
         }
 
     },
