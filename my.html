@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/zerofive.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/card.css" />
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -80,121 +81,87 @@
                 <h3>我发布的</h3>
             </div>
     <div v-for="i in info">
-            <div class="container" style="color: #53443d; margin-bottom: 30px;margin-top: 20px;">
-                <div class="row">
-                    <div class="col-md-10" style="background-color: #dedef8;box-shadow:
-                 inset 1px -1px 1px #444, inset -1px 1px 1px #444;border-radius:25px;">
-                        <div class="row">
-                            <div class="col-md-12" style="background-color:#dd7e7e;
-                       box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444; border-radius: 25px;">
-                                <div class="row">
-                                    <div class="col-md-4" style="background-color: #dd7e7e;
-                     border-top-left-radius:25px;">
-                                        <p class="font-weight-bold" style="font-size: 30px;text-align:center;
-                       text-align:right;text-align:justify;margin-top: 40px;">加入人数</p>
-                                        <p class="font-weight-bold" style="font-size: 50px; color: #FFF;margin-left: 40px;"> 5 </p>
-                                    </div>
-                                    <div class="col-md-8" style="background-color:#dd7e7e;">
-                                        <div class="a" style="font-size: larger;">
-                                            <p>{{i.stime}}</p>
-                                        </div>
-                                        <div style="text-align: center; font-size: larger; font-style: italic;font-weight:bold;
-                         background-color:#dd7e7e;margin-top:0;margin-bottom:0;border-radius: 0;">
-                                            <p>to</p>
-                                        </div>
-                                        <div class="a" style="font-size: larger;">
-                                            <p>{{i.etime}}</p>
-                                        </div>
-                                        <div class="a" style="font-size: 30px;">
-                                            <p>{{i.location}}</p>
-                                        </div>
-                                    </div>
+        <div class="container card_container" style="margin-top:25px;">
+            <div class="row" >
+                <div class="col-md-10  col-sm-10 col-10" style="background-color: #dedef8;box-shadow:
+         inset 1px -1px 1px #444, inset -1px 1px 1px #444;border-radius:25px;">
+                    <div class="row" >
+                        <div class="col-md-12 col-sm-12 col-12" style="background-color:#dd7e7e;
+               box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444; border-radius: 25px;">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-4" style="background-color: #dd7e7e;
+             border-top-left-radius:25px;">
+                                    <p class="font-weight-bold" style="font-size: 30px;text-align:center;
+               text-align:right;text-align:justify; margin-top: 20%;margin-left: 27%;">加入人数</p>
+                                    <p class="font-weight-bold" style="font-size: 50px; color: #FFF;margin-left: 26%;">
+                                        {{ i.joined }}
+                                    </p>
+                                </div>
+                                <div class="col-md-8  col-sm-8 col-8" style="background-color:#dd7e7e;">
+                                    <div class="aa" style="font-size: larger;"><p>{{ i.stime }}</p></div>
+                                    <div class="aa" style="text-align: center; font-size: larger; font-style: italic;font-weight:bold;
+                 background-color:#dd7e7e;margin-top:0;margin-bottom:0;border-radius: 0;"><p>to</p></div>
+                                    <div class="aa" style="font-size: larger;"><p>{{ i.etime }}</p></div>
+                                    <div class="aa" style="font-size: 30px;"><p>{{ i.location }}</p></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12" style="background-color:WhiteSmoke; border-bottom-left-radius:25px;height:60px;">
-                                <h4 style="font-size: 30px; font-weight: bold; margin-top:10px;">{{i.remarks}}</h4>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-12" style="background-color:WhiteSmoke; border-bottom-left-radius:25px;height:60px;">
+                            <h4 style="font-size: 30px; font-weight: bold; margin-top:10px;">备注：{{ i.remarks }}</h4>
                         </div>
                     </div>
-                    <div class="col-md-2" style="background-color:#61be90; flex: auto; border-top-right-radius:25px;border-bottom-right-radius:25px;">
-                        <h3 class="text-center" style="width: auto;
-              height: auto;
-              margin-top: 60px;
-              margin-left: 25px;
-              border: 1px solid#61be90;
-             /*垂直方向文字*/
-             writing-mode: vertical-rl;
-             /*居中文字*/
-             text-align: center;
-             display:flex;
-             flex-direction:column;
-             justify-content:center;
-             letter-spacing: 25px;">{{ i.finished }}</h3>
-                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-2" style="background-color:#61be90; flex: auto; border-top-right-radius:25px;border-bottom-right-radius:25px;">
+                    <h3 class="text-center finished">{{ i.finished }}</h3>
                 </div>
             </div>
+
+        </div>
     </div>
             <!--card 2-->
             <div class="jumbotron text-center" style="margin-bottom:0;color: rgb(0, 132, 255) ;background-color: white">
                 <h3>我加入的</h3>
             </div>
-        <div v-for="j in info2">
-            <div class="container" style="color: #53443d; margin-bottom: 30px;margin-top: 20px;">
-                <div class="row">
-                    <div class="col-md-10" style="background-color: #dedef8;box-shadow:
+        <div v-for="i in info2">
+            <div class="container card_container" style="margin-top:25px;">
+                <div class="row" >
+                    <div class="col-md-10  col-sm-10 col-10" style="background-color: #dedef8;box-shadow:
          inset 1px -1px 1px #444, inset -1px 1px 1px #444;border-radius:25px;">
-                        <div class="row">
-                            <div class="col-md-12" style="background-color:rgb(232, 228, 122);
+                        <div class="row" >
+                            <div class="col-md-12 col-sm-12 col-12" style="background-color:#dd7e7e;
                box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444; border-radius: 25px;">
                                 <div class="row">
-                                    <div class="col-md-4" style="background-color: rgb(232, 228, 122);
+                                    <div class="col-md-4 col-sm-4 col-4" style="background-color: #dd7e7e;
              border-top-left-radius:25px;">
                                         <p class="font-weight-bold" style="font-size: 30px;text-align:center;
-               text-align:right;text-align:justify;margin-top: 40px;">加入人数</p>
-                                        <p class="font-weight-bold" style="font-size: 50px; color: #FFF;margin-left: 40px;"> 5 </p>
+               text-align:right;text-align:justify; margin-top: 20%;margin-left: 27%;">加入人数</p>
+                                        <p class="font-weight-bold" style="font-size: 50px; color: #FFF;margin-left: 26%;">
+                                            {{ i.joined }}
+                                        </p>
                                     </div>
-                                    <div class="col-md-8" style="background-color:rgb(232, 228, 122);">
-                                        <div class="a" style="font-size: larger;">
-                                            <p>{{j.stime}}</p>
-                                        </div>
-                                        <div style="text-align: center; font-size: larger; font-style: italic;font-weight:bold;
-                 background-color:rgb(232, 228, 122);margin-top:0;margin-bottom:0;border-radius: 0;">
-                                            <p>to</p>
-                                        </div>
-                                        <div class="a" style="font-size: larger;">
-                                            <p>{{j.etime}}</p>
-                                        </div>
-                                        <div class="a" style="font-size: 30px;">
-                                            <p>{{j.location}}</p>
-                                        </div>
+                                    <div class="col-md-8  col-sm-8 col-8" style="background-color:#dd7e7e;">
+                                        <div class="aa" style="font-size: larger;"><p>{{ i.stime }}</p></div>
+                                        <div class="aa" style="text-align: center; font-size: larger; font-style: italic;font-weight:bold;
+                 background-color:#dd7e7e;margin-top:0;margin-bottom:0;border-radius: 0;"><p>to</p></div>
+                                        <div class="aa" style="font-size: larger;"><p>{{ i.etime }}</p></div>
+                                        <div class="aa" style="font-size: 30px;"><p>{{ i.location }}</p></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-12" style="background-color:WhiteSmoke; border-bottom-left-radius:25px;height:60px;">
-                                <h4 style="font-size: 30px; font-weight: bold; margin-top:10px;">{{j.remarks}}</h4>
+                            <div class="col-md-12 col-sm-12 col-12" style="background-color:WhiteSmoke; border-bottom-left-radius:25px;height:60px;">
+                                <h4 style="font-size: 30px; font-weight: bold; margin-top:10px;">备注：{{ i.remarks }}</h4>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2" style="background-color:#c7cbd2; flex: auto; border-top-right-radius:25px;border-bottom-right-radius:25px;">
-                        <h3 class="text-center" style="width: auto;
-      height: auto;
-      margin-top: 60px;
-      margin-left: 25px;
-      border: 1px solid#c7cbd2;
-     /*垂直方向文字*/
-     writing-mode: vertical-rl;
-     /*居中文字*/
-     text-align: center;
-     display:flex;
-     flex-direction:column;
-     justify-content:center;
-     letter-spacing: 25px;"> 未开始</h3>
+                    <div class="col-md-2 col-sm-2 col-2" style="background-color:#61be90; flex: auto; border-top-right-radius:25px;border-bottom-right-radius:25px;">
+                        <h3 class="text-center finished">{{ i.finished }}</h3>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
