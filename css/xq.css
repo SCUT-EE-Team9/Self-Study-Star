@@ -1,0 +1,294 @@
+body{
+    background-color: LightCoral;
+  }
+  div{
+    color: #53443d;
+  }
+  @media (min-width: 768px) { 
+    h3{ width: auto;
+      height: auto;
+      margin-top: 90px;
+      margin-left: 20%;
+      border: 1px solid#61be90;
+     /*垂直方向文字*/
+     writing-mode: vertical-rl;
+     /*居中文字*/
+     text-align: center;
+     display:flex;
+     flex-direction:column; 
+     justify-content:center;
+     letter-spacing: 25px;
+     
+   }
+ 
+ }
+   .container{
+     background-color: LightCoral;
+     border-radius: 25px;
+   }
+ 
+   .a{
+     margin-top: 10px;
+     margin-bottom:10px;
+     text-align:center;
+     border-radius: 25px;
+     background-color:WhiteSmoke ;
+     border: 1px solid LightCoral
+   }
+  
+     h3 {
+     font-size: 30px;
+     letter-spacing: 25px;
+     
+     }
+
+     /*流光按钮*/
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+
+aa {
+    /* 相对定位 */
+    position: relative;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #fff;
+    /* 圆角属性 */
+    border-radius: 10px;
+    /* 背景渐变色 */
+    background-image: linear-gradient(  to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
+    /* 背景渐变色大小 */
+    background-size: 400%;
+    z-index: 1;
+}
+
+/* 下面设计 发光效果 */
+aa::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    border-radius: 50px;
+    /* 背景渐变色 */
+    background-image: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
+    /* 背景渐变色大小 */
+    background-size: 400%;
+    /* 元素的位置 底层或者顶层  -值表示底层 + 值表示顶层 */
+    z-index: -1;
+    /* 设置模糊度 显示发光效果 */
+    filter: blur(20px);
+}
+
+aa:hover {
+    /* 动画 名称 时间 infinite 是无限次播放 */
+    animation: sun 8s infinite;
+}
+
+aa:hover::before {
+    animation: sun 8s infinite;
+}
+@keyframes sun {
+    100% {
+        /* 背景位置 */
+        background-position: -400% 0;
+    }
+}
+
+     /*流光按钮*/
+     .parent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+    }
+    
+    
+    cc {
+        /* 相对定位 */
+        position: relative;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 24px;
+        color: #fff;
+        /* 圆角属性 */
+        border-radius: 10px;
+        /* 背景渐变色 */
+        background-image: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
+        /* 背景渐变色大小 */
+        background-size: 400%;
+        z-index: 1;
+    }
+    
+    /* 下面设计 发光效果 */
+    cc::before {
+        content: '';
+        position: absolute;
+        top: -5px;
+        bottom: -5px;
+        left: -5px;
+        right: -5px;
+        border-radius: 50px;
+        /* 背景渐变色 */
+        background-image: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
+        /* 背景渐变色大小 */
+        background-size: 400%;
+        /* 元素的位置 底层或者顶层  -值表示底层 + 值表示顶层 */
+        z-index: -1;
+        /* 设置模糊度 显示发光效果 */
+        filter: blur(20px);
+    }
+    
+    cc:hover {
+        /* 动画 名称 时间 infinite 是无限次播放 */
+        animation: sun 8s infinite;
+    }
+    
+    cc:hover::before {
+        animation: sun 8s infinite;
+    }
+    @keyframes sun {
+        100% {
+            /* 背景位置 */
+            background-position: -400% 0;
+        }
+    }
+    
+
+
+@media (min-width: 768px) { 
+    /*流光按钮*/
+    .parent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+    }
+    
+    
+    aa {
+        /* 相对定位 */
+        position: relative;
+        width: 50%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 24px;
+        color: #fff;
+        /* 圆角属性 */
+        border-radius: 50px;
+        /* 背景渐变色 */
+        background-image: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
+        /* 背景渐变色大小 */
+        background-size: 400%;
+        z-index: 1;
+    }
+    
+    /* 下面设计 发光效果 */
+    aa::before {
+        content: '';
+        position: absolute;
+        top: -5px;
+        bottom: -5px;
+        left: -5px;
+        right: -5px;
+        border-radius: 50px;
+        /* 背景渐变色 */
+        background-image: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
+        /* 背景渐变色大小 */
+        background-size: 400%;
+        /* 元素的位置 底层或者顶层  -值表示底层 + 值表示顶层 */
+        z-index: -1;
+        /* 设置模糊度 显示发光效果 */
+        filter: blur(20px);
+    }
+    
+    aa:hover {
+        /* 动画 名称 时间 infinite 是无限次播放 */
+        animation: sun 8s infinite;
+    }
+    
+    aa:hover::before {
+        animation: sun 8s infinite;
+    }
+    
+    @keyframes sun {
+        100% {
+            /* 背景位置 */
+            background-position: -400% 0;
+        }
+    }
+
+
+cc {
+    /* 相对定位 */
+    position: relative;
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #fff;
+    /* 圆角属性 */
+    border-radius: 50px;
+    /* 背景渐变色 */
+    background-image: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
+    /* 背景渐变色大小 */
+    background-size: 400%;
+    z-index: 1;
+}
+
+/* 下面设计 发光效果 */
+cc::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    border-radius: 50px;
+    /* 背景渐变色 */
+    background-image: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
+    /* 背景渐变色大小 */
+    background-size: 400%;
+    /* 元素的位置 底层或者顶层  -值表示底层 + 值表示顶层 */
+    z-index: -1;
+    /* 设置模糊度 显示发光效果 */
+    filter: blur(20px);
+}
+
+cc:hover {
+    /* 动画 名称 时间 infinite 是无限次播放 */
+    animation: sun 8s infinite;
+}
+
+cc:hover::before {
+    animation: sun 8s infinite;
+}
+
+@keyframes sun {
+    100% {
+        /* 背景位置 */
+        background-position: -400% 0;
+    }
+}
+
+}
