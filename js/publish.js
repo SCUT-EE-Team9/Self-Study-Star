@@ -14,7 +14,7 @@ new Vue({
         publish: function(){
             axios({
                 method:'post',
-                url:'http://127.0.0.1:8079/publish',
+                url:'http://121.4.79.92:8080/publish',
                 data: {
                     username: this.username,
                     stime: this.stime,

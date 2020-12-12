@@ -2,8 +2,8 @@ new Vue({
     el: '#app2',
     data() {
         return {
-            Location: null,
-            Time: null,
+            Location: "",
+            Time: "",
             info: null
         }
     },
@@ -11,14 +11,16 @@ new Vue({
         search: function(){
             axios({
                 method:'post',
-                url:'http://121.4.79.92:8080/test/search',
+                //url:'http://localhost:8079/search',
+                url:'http://121.4.79.92:8080/search',
                 data: {
                     location: this.Location,
                     time: this.Time
                 },
                 responseType:'json'
             })
-                .then(response => (this.info = response.data))
+                .then(response => (this.info = response.data.data))
+                //.then(response => (this.info = response.data))
         }
 
     },
