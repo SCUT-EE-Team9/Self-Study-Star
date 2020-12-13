@@ -1,11 +1,12 @@
 new Vue({
     el: '#app2',
     data() {
-        return {
-            Location: "",
-            Time: "",
-            info: null
-        }
+            return {
+                Location: "",
+                Time: "",
+                info: null
+            }
+
     },
     methods:{
         search: function(){
