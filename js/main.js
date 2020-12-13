@@ -1,6 +1,6 @@
 new Vue({
     el: '#app',
-    data () {
+    data() {
         return {
             username: null,
             info: null,
@@ -8,7 +8,7 @@ new Vue({
             stime: 233
         }
     },
-    mounted () {
+    mounted() {
         /*axios
             .get('https://api.coindesk.com/v1/bpi/currentprice.json')
             /*.then(function (response){
@@ -16,22 +16,22 @@ new Vue({
             })
             .then(response => (this.info = response.data.bpi))*/
         axios({
-            method:'get',
-            url:'https://api.coindesk.com/v1/bpi/currentprice.json',
-            responseType:'json'
+            method: 'get',
+            url: 'https://api.coindesk.com/v1/bpi/currentprice.json',
+            responseType: 'json'
         })
             .then(response => (this.info2 = response.data.bpi))
 
 
         axios({
-            method:'post',
-            url:'http://47.113.122.41:8080/publish',
+            method: 'post',
+            url: 'http://47.113.122.41:8080/publish',
             data: {
                 username: '张三',
                 title: '博学楼101',
                 content: '2020.10.32 23:00 - 2020.10.33 02:00'
             },
-            responseType:'json'
+            responseType: 'json'
         })
             .then(response => (this.info = response.data))
     },

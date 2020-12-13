@@ -7,14 +7,14 @@ new Vue({
             etime: null,
             Location: "",
             remarks: "",
-            info:null
+            info: null
         }
     },
-    methods:{
-        publish: function(){
+    methods: {
+        publish: function () {
             axios({
-                method:'post',
-                url:'http://121.4.79.92:8080/publish',
+                method: 'post',
+                url: 'http://121.4.79.92:8080/publish',
                 data: {
                     username: this.username,
                     stime: this.stime,
@@ -22,7 +22,7 @@ new Vue({
                     location: this.Location,
                     remarks: this.remarks
                 },
-                responseType:'json'
+                responseType: 'json'
             })
                 .then(response => (this.info = response.data))
         }
@@ -30,11 +30,10 @@ new Vue({
     },
     watch: {
         info(val, oldVal) {
-            if(val.result=="ok"){
+            if (val.result == "ok") {
                 alert(val.message);
                 window.location.href = "index.html"
-            }
-            else{
+            } else {
                 alert(val.message);
             }
         }

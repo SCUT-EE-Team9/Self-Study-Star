@@ -1,29 +1,33 @@
- div{
-   color: #53443d;
- }
- .finished{ width: auto;
-     height: auto;
-     margin-top: 90px;
-     margin-left:20%;
+div {
+    color: #53443d;
+}
+
+.finished {
+    width: auto;
+    height: auto;
+    margin-top: 90px;
+    margin-left: 20%;
     /*垂直方向文字*/
     writing-mode: vertical-rl;
     /*居中文字*/
     text-align: center;
-    display:flex;
-    flex-direction:column; 
-    justify-content:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     letter-spacing: 25px;
-  }
-  .card_container{
+}
+
+.card_container {
     background-color: LightCoral;
     border-radius: 25px;
-  }
-  .aa{
+}
+
+.aa {
     margin-top: 10px;
-    margin-bottom:10px;
-    text-align:center;
+    margin-bottom: 10px;
+    text-align: center;
     border-radius: 25px;
-    background-color:WhiteSmoke ;
-    border: 1px solid#dd7e7e
-  }
+    background-color: WhiteSmoke;
+    border: 1px solid #dd7e7e
+}
  

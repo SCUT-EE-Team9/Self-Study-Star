@@ -2,28 +2,34 @@
 label {
     margin-right: 20px;
     font-size: x-large;
-    color:deepskyblue;
-  }
-  div input {
-        border-top-right-radius: 30px; 
-        border-top-left-radius: 30px; 
-        border-bottom-right-radius:30px;
-        border-bottom-left-radius:30px;}
-         #input::-webkit-input-placeholder { /* WebKit browsers 适配谷歌 */
-            color: #be1f1f;
-        }
-        #input:-moz-placeholder { /* Mozilla Firefox 4 to 18 适配火狐 */
-            color:#be1f1f;
-        }
-        #input::-moz-placeholder { /* Mozilla Firefox 19+ 适配火狐 */
-            color:#be1f1f;
-        }
-        #input:-ms-input-placeholder { /* Internet Explorer 10+  适配ie*/
-            color: #be1f1f;
-        }
+    color: deepskyblue;
+}
+
+div input {
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+#input::-webkit-input-placeholder { /* WebKit browsers 适配谷歌 */
+    color: #be1f1f;
+}
+
+#input:-moz-placeholder { /* Mozilla Firefox 4 to 18 适配火狐 */
+    color: #be1f1f;
+}
+
+#input::-moz-placeholder { /* Mozilla Firefox 19+ 适配火狐 */
+    color: #be1f1f;
+}
+
+#input:-ms-input-placeholder { /* Internet Explorer 10+  适配ie*/
+    color: #be1f1f;
+}
 
 /*标题鼠标悬浮变色*/
-   h1:hover { 
+h1:hover {
     color: rgba(255, 99, 71, 0.5);
 }
 

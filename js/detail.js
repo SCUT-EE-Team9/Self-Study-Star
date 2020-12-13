@@ -1,13 +1,15 @@
-function getQueryVariable(variable)
-{
+function getQueryVariable(variable) {
     let query = window.location.search.substring(1);
     let vars = query.split("&");
-    for (let i=0;i<vars.length;i++) {
+    for (let i = 0; i < vars.length; i++) {
         let pair = vars[i].split("=");
-        if(pair[0] == variable){return pair[1];}
+        if (pair[0] == variable) {
+            return pair[1];
+        }
     }
-    return(false);
+    return (false);
 }
+
 new Vue({
     el: '#app4',
     data() {
@@ -28,31 +30,31 @@ new Vue({
                 },
                 "joined": {}
             },
-            info2:null,
+            info2: null,
         }
     },
-    mounted () {
+    mounted() {
         axios({
-            method:'get',
+            method: 'get',
             //url:'http://localhost:8079/search',
-            url:'http://121.4.79.92:8080/detail/'+this.tid,
-            responseType:'json'
+            url: 'http://121.4.79.92:8080/detail/' + this.tid,
+            responseType: 'json'
         })
             .then(response => (this.info = response.data.data))
     }
     ,
-    methods:{
-        join: function(){
+    methods: {
+        join: function () {
             axios({
-                method:'post',
+                method: 'post',
                 //url:'http://localhost:8079/join',
-                url:'http://121.4.79.92:8080/join',
+                url: 'http://121.4.79.92:8080/join',
                 data: {
-                    tid:this.tid,
-                    pname:this.pname,
-                    pmessage:this.pmessage
+                    tid: this.tid,
+                    pname: this.pname,
+                    pmessage: this.pmessage
                 },
-                responseType:'json'
+                responseType: 'json'
             })
                 .then(response => (this.info2 = response.data))
             //.then(response => (this.info = response.data))

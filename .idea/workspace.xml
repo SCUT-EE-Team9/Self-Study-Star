@@ -19,8 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69ea8472-d4e5-4fcd-af7a-b6bc993bad08" name="Default Changelist" comment="updated detail.html &amp; detail.js">
-      <change beforePath="$PROJECT_DIR$/publish.html" beforeDir="false" afterPath="$PROJECT_DIR$/publish.html" afterDir="false" />
+    <list default="true" id="69ea8472-d4e5-4fcd-af7a-b6bc993bad08" name="Default Changelist" comment="bugs fixed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +70,7 @@
       <workItem from="1607330300539" duration="15127000" />
       <workItem from="1607478987921" duration="1084000" />
       <workItem from="1607480081845" duration="10950000" />
-      <workItem from="1607657313937" duration="26748000" />
+      <workItem from="1607657313937" duration="27291000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1607479064693</created>
@@ -204,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607867014061</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="bugs fixed">
+      <created>1607867056672</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1607867056672</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,9 +244,9 @@
     <MESSAGE value="Roseccc: updated register&amp;login.html" />
     <MESSAGE value="added Navbar&#10;reformatted code" />
     <MESSAGE value="updated margin" />
-    <MESSAGE value="bugs fixed" />
     <MESSAGE value="updated detail.html &amp; detail.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated detail.html &amp; detail.js" />
+    <MESSAGE value="bugs fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="bugs fixed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607480134753">
@@ -317,10 +325,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1099" height="231" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1603508327406" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607867020641">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607867060593">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607867020641" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607867060593" />
     <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607781228574">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -1,26 +1,28 @@
 /*标题鼠标悬浮变色*/
-h1:hover { 
-  color: rgba(255, 99, 71, 0.5);
+h1:hover {
+    color: rgba(255, 99, 71, 0.5);
 }
+
 .flex-container {
-  display: -webkit-flex;
-  display: flex;
-  width: 400px;
-  height: 250px;
-  background-color:lightgrey;
+    display: -webkit-flex;
+    display: flex;
+    width: 400px;
+    height: 250px;
+    background-color: lightgrey;
 }
 
 .flex-item {
-  background-color: cornflowerblue;
-  width: 100px;
-  height: 100px;
-  margin: 10px;
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
 }
-.a{
-margin-top: 10px;
-margin-bottom:10px;
-text-align:center;
-border-radius: 25px;
-background-color:WhiteSmoke ;
-border: 1px solid#dd7e7e
+
+.a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: WhiteSmoke;
+    border: 1px solid #dd7e7e
 }

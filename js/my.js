@@ -4,29 +4,29 @@ new Vue({
         return {
             username: null,
             info: null,
-            info2:null,
+            info2: null,
         }
     },
-    methods:{
-        search: function(){
+    methods: {
+        search: function () {
             axios({
-                method:'post',
+                method: 'post',
                 //url:'http://127.0.0.1:8079/my/published',
-                url:'http://121.4.79.92:8080/my/published',
+                url: 'http://121.4.79.92:8080/my/published',
                 data: {
-                    username:this.username
+                    username: this.username
                 },
-                responseType:'json'
+                responseType: 'json'
             })
                 .then(response => (this.info = response.data.data))
             axios({
-                method:'post',
+                method: 'post',
                 //url:'http://127.0.0.1:8079/my/joined',
-                url:'http://121.4.79.92:8080/my/joined',
+                url: 'http://121.4.79.92:8080/my/joined',
                 data: {
-                    username:this.username
+                    username: this.username
                 },
-                responseType:'json'
+                responseType: 'json'
             })
                 .then(response => (this.info2 = response.data.data))
         }
