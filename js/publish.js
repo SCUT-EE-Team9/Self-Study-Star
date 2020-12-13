@@ -32,11 +32,11 @@ new Vue({
         info(val, oldVal) {
             if(val.result=="ok"){
                 alert(val.message);
+                window.location.href = "index.html"
             }
             else{
                 alert(val.message);
             }
-            console.log("inputVal = " + val.message + " , oldValue = " + oldVal)
         }
     }
 })

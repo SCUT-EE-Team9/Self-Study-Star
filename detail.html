@@ -35,22 +35,21 @@
             </div>
 
         </header>
-        <div class="text-center" style="font-size: 50px;">张三</div>
+        <div class="text-center" style="font-size: 50px;">{{ info.detail.username }}</div>
 
         <div class="row">
             <div class="col-md-10 offset-md-1 col-sm-8 offset-sm-2 col-10 offset-1"
                  style="background-color:LightCoral;margin-top: 0%;">
-                <div class="a " style="font-size: larger;font-weight: 500; margin-top: 5% ;height: 10%;"><p>2020.09.05
-                    15:00</p></div>
+                <div class="a " style="font-size: larger;font-weight: 500; margin-top: 5% ;height: 10%;"><p>{{ info.detail.stime }}</p></div>
                 <div style="text-align: center; font-size: larger; font-style: italic;font-weight:bold;
                        background-color:LightCoral;margin-top:0%;margin-bottom:0%;border-radius: 0;height: 15%;"><p>
                     to</p></div>
-                <div class="a" style="font-size: larger;font-weight: 500; height: 10%;"><p>2020.09.05 15:00</p></div>
+                <div class="a" style="font-size: larger;font-weight: 500; height: 10%;"><p>{{ info.detail.etime }}</p></div>
                 <div class="a"
                      style="font-size: 35px;font-weight: 510;margin-top: 2% ; height: 20%;border-radius: 15px;">
-                    <p>博学楼101</p></div>
-                <div class="a" style="font-size: 30px;font-weight:bold;text-align: left;
-                       margin-top: 2% ; height: 15%;border-radius: 15px;"><p>备注：</p></div>
+                    <p>{{ info.detail.location }}</p></div>
+                <div class="a" style="font-size: 30px;font-weight:bold;text-align: center;
+                       margin-top: 2% ; height: 15%;border-radius: 15px;"><p>备注：{{ info.detail.remarks }}</p></div>
             </div>
         </div>
         <div class="row">
@@ -59,7 +58,7 @@
                     <form>
                         <div class="input-group mb-3">
                             <label class="text" style="font-size: x-large;margin-left: 2%;">名字：</label>
-                            <input type="text" placeholder="请输入你的名字(o°ω°o)" class="form-control"
+                            <input type="text" placeholder="请输入你的名字(o°ω°o)" v-model="pname" class="form-control"
                                    style="border-radius:100px">
                         </div>
                     </form>
@@ -74,7 +73,7 @@
                     <form>
                         <div class="input-group mb-3">
                             <label class="text" style="font-size: x-large;margin-left: 2%;">备注：</label>
-                            <input type="text" placeholder="此处可不填(〃'▽'〃)" class="form-control"
+                            <input type="text" placeholder="此处可不填(〃'▽'〃)" v-model="pmessage" class="form-control"
                                    style="border-radius:100px">
                         </div>
                     </form>
@@ -88,9 +87,11 @@
                 <!--<div class="parent" style="margin-top: 15%; margin-left:15%;">
                 <aa href="#">加入</a>
                 </div>-->
-                <button type="button" class="btn btn-default" style="background-color:#19fff8;margin-top: 5%; margin-left:10%;margin-bottom: 2%;
-font-size: 30px;font-weight:bold;color:  #53443d;border-radius: 10px;width: 80%;">加入
+                <button v-on:click="join" type="button" class="btn btn-default" style="background-color:#19fff8;margin-top: 5%; margin-left:10%;margin-bottom: 2%;
+font-size: 30px;font-weight:bold;color:  #53443d;border-radius: 10px;width: 80%;">
+                    加入
                 </button>
+
             </div>
 
 
@@ -100,30 +101,26 @@ font-size: 30px;font-weight:bold;color:  #53443d;border-radius: 10px;width: 80%;
                 <cc href="#">取消</c>
                 </div>-->
                 <button type="button" class="btn btn-default" style="background-color: #ff7822;margin-top: 5%; margin-left:15%;margin-bottom: 2%;
-font-size: 30px;font-weight:bold;color:  #53443d;border-radius: 10px;width: 80%;" @click="history.back(-1)">取消
+font-size: 30px;font-weight:bold;color:  #53443d;border-radius: 10px;width: 80%;">取消
                 </button>
             </div>
         </div>
-        {{ tid }}
     </div>
 
-    <div  class ="table-responsive" style="text-align:center">
-        <table   border ="0"  cellspacing ="0"  cellpadding ="0"  class ="table">
-            <tr  class =" label-primary">
-                <th  scope ="col"  width ="50%"  >姓名 </span></th>
-                <th  scope ="col">备注</span></th>
-            </tr>
-            <tr  class ="active">
-                <td  width ="50%">王五 </td>
-                <td >绿色外套 </td>
-            </tr>
-            <tr  class ="success">
-                <td>李四 </td>
-                <td>白色帽子 提前10分钟到</td>
-            </tr>
+        <div  class ="table-responsive" style="text-align:center">
+            <table   border ="0"  cellspacing ="0"  cellpadding ="0"  class ="table">
+                <tr  class =" label-primary">
+                    <th  scope ="col"  width ="50%"  >姓名</span></th>
+                    <th  scope ="col">备注</span></th>
+                </tr>
+                <tr  class ="active" v-for="i in info.joined">
+                    <td  width ="50%">{{i.qname}} </td>
+                    <td >{{i.qmessage}} </td>
+                </tr>
 
-        </table>
-    </div>
+            </table>
+        </div>
+
 
 </div>
 
