@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69ea8472-d4e5-4fcd-af7a-b6bc993bad08" name="Default Changelist" comment="added Navbar&#10;reformatted code">
+    <list default="true" id="69ea8472-d4e5-4fcd-af7a-b6bc993bad08" name="Default Changelist" comment="updated margin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my.html" beforeDir="false" afterPath="$PROJECT_DIR$/my.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/publish.html" beforeDir="false" afterPath="$PROJECT_DIR$/publish.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/search.html" afterDir="false" />
     </list>
@@ -72,7 +72,7 @@
       <workItem from="1607330300539" duration="15127000" />
       <workItem from="1607478987921" duration="1084000" />
       <workItem from="1607480081845" duration="10950000" />
-      <workItem from="1607657313937" duration="21553000" />
+      <workItem from="1607657313937" duration="22280000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1607479064693</created>
@@ -172,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607842203849</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="updated margin">
+      <created>1607844937404</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1607844937404</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +211,8 @@
     <MESSAGE value="added jump url&#10;Roseccc: updated index.html" />
     <MESSAGE value="Roseccc: updated register&amp;login.html" />
     <MESSAGE value="added Navbar&#10;reformatted code" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Navbar&#10;reformatted code" />
+    <MESSAGE value="updated margin" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated margin" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607480134753">
@@ -283,10 +291,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1099" height="231" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1603508327406" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607842214993">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607844947999">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607842214993" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607844947999" />
     <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607781228574">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
