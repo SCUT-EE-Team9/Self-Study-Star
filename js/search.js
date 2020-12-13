@@ -21,7 +21,7 @@ new Vue({
             })
                 .then(response => (this.info = response.data.data))
                 //.then(response => (this.info = response.data))
-        }
+        },
 
     },
 })

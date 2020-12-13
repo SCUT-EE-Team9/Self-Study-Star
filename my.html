@@ -81,7 +81,7 @@
                 <h3>我发布的</h3>
             </div>
     <div v-for="i in info">
-        <div class="container card_container" style="margin-top:25px;">
+        <div class="container card_container" style="margin-top:25px;" @click="window.location.href=('detail.html?tid='+i.tid)">
             <div class="row" >
                 <div class="col-md-10  col-sm-10 col-10" style="background-color: #dedef8;box-shadow:
          inset 1px -1px 1px #444, inset -1px 1px 1px #444;border-radius:25px;">
@@ -125,7 +125,7 @@
                 <h3>我加入的</h3>
             </div>
         <div v-for="i in info2">
-            <div class="container card_container" style="margin-top:25px;">
+            <div class="container card_container" style="margin-top:25px;" @click="window.location.href=('detail.html?tid='+i.tid)">
                 <div class="row" >
                     <div class="col-md-10  col-sm-10 col-10" style="background-color: #dedef8;box-shadow:
          inset 1px -1px 1px #444, inset -1px 1px 1px #444;border-radius:25px;">

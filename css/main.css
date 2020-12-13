@@ -57,7 +57,7 @@ a {
 }
 
 /* 下面设计 发光效果 */
-button::before {
+a::before {
     content: '';
     position: absolute;
     top: -5px;
