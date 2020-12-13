@@ -2,12 +2,12 @@
 <html>
 <head>
     <title>我的自习</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/zerofive.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/card.css" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/zerofive.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/card.css"/>
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -40,6 +40,29 @@
 </head>
 <body>
 <div id="app3">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">约自习吧！</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="publish.html">发布自习</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="search.html">搜索自习</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="my.html">我的自习<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div class="jumbotron text-center" style="margin-bottom:0;color: rgb(0, 132, 255) ;background-color: white">
         <h1>我的自习</h1>
     </div>
@@ -48,12 +71,13 @@
             <form>
                 <div class="input-group mb-2">
                     <label class="text">名字：</label>
-                    <input type="text" v-model="username" placeholder="你的名字(✪ω✪)" class="form-control" style="border-radius:100px" />
+                    <input type="text" v-model="username" placeholder="你的名字(✪ω✪)" class="form-control"
+                           style="border-radius:100px"/>
                 </div>
             </form>
         </div>
         <div class="parent" style="margin-bottom: 150px;">
-            <a v-on:click="search">查询</a>
+            <button v-on:click="search" class="button_a">查询</button>
         </div>
     </div>
     <!-- 导航居中 -->
@@ -77,15 +101,16 @@
     <!--card 1-->
 
 
-            <div class="jumbotron text-center" style="margin-bottom:0;color: rgb(0, 132, 255) ;background-color: white">
-                <h3>我发布的</h3>
-            </div>
+    <div class="jumbotron text-center" style="margin-bottom:0;color: rgb(0, 132, 255) ;background-color: white">
+        <h3>我发布的</h3>
+    </div>
     <div v-for="i in info">
-        <div class="container card_container" style="margin-top:25px;" @click="window.location.href=('detail.html?tid='+i.tid)">
-            <div class="row" >
+        <div class="container card_container" style="margin-top:25px;"
+             @click="window.location.href=('detail.html?tid='+i.tid)">
+            <div class="row">
                 <div class="col-md-10  col-sm-10 col-10" style="background-color: #dedef8;box-shadow:
          inset 1px -1px 1px #444, inset -1px 1px 1px #444;border-radius:25px;">
-                    <div class="row" >
+                    <div class="row">
                         <div class="col-md-12 col-sm-12 col-12" style="background-color:#dd7e7e;
                box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444; border-radius: 25px;">
                             <div class="row">
@@ -108,63 +133,68 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12 col-sm-12 col-12" style="background-color:WhiteSmoke; border-bottom-left-radius:25px;height:60px;">
+                        <div class="col-md-12 col-sm-12 col-12"
+                             style="background-color:WhiteSmoke; border-bottom-left-radius:25px;height:60px;">
                             <h4 style="font-size: 30px; font-weight: bold; margin-top:10px;">备注：{{ i.remarks }}</h4>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-2 col-2" style="background-color:#61be90; flex: auto; border-top-right-radius:25px;border-bottom-right-radius:25px;">
+                <div class="col-md-2 col-sm-2 col-2"
+                     style="background-color:#61be90; flex: auto; border-top-right-radius:25px;border-bottom-right-radius:25px;">
                     <h3 class="text-center finished">{{ i.finished }}</h3>
                 </div>
             </div>
 
         </div>
     </div>
-            <!--card 2-->
-            <div class="jumbotron text-center" style="margin-bottom:0;color: rgb(0, 132, 255) ;background-color: white">
-                <h3>我加入的</h3>
-            </div>
-        <div v-for="i in info2">
-            <div class="container card_container" style="margin-top:25px;" @click="window.location.href=('detail.html?tid='+i.tid)">
-                <div class="row" >
-                    <div class="col-md-10  col-sm-10 col-10" style="background-color: #dedef8;box-shadow:
+    <!--card 2-->
+    <div class="jumbotron text-center" style="margin-bottom:0;color: rgb(0, 132, 255) ;background-color: white">
+        <h3>我加入的</h3>
+    </div>
+    <div v-for="i in info2">
+        <div class="container card_container" style="margin-top:25px;"
+             @click="window.location.href=('detail.html?tid='+i.tid)">
+            <div class="row">
+                <div class="col-md-10  col-sm-10 col-10" style="background-color: #dedef8;box-shadow:
          inset 1px -1px 1px #444, inset -1px 1px 1px #444;border-radius:25px;">
-                        <div class="row" >
-                            <div class="col-md-12 col-sm-12 col-12" style="background-color:#dd7e7e;
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-12" style="background-color:#dd7e7e;
                box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444; border-radius: 25px;">
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-4 col-4" style="background-color: #dd7e7e;
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-4" style="background-color: #dd7e7e;
              border-top-left-radius:25px;">
-                                        <p class="font-weight-bold" style="font-size: 30px;text-align:center;
+                                    <p class="font-weight-bold" style="font-size: 30px;text-align:center;
                text-align:right;text-align:justify; margin-top: 20%;margin-left: 27%;">加入人数</p>
-                                        <p class="font-weight-bold" style="font-size: 50px; color: #FFF;margin-left: 26%;">
-                                            {{ i.joined }}
-                                        </p>
-                                    </div>
-                                    <div class="col-md-8  col-sm-8 col-8" style="background-color:#dd7e7e;">
-                                        <div class="aa" style="font-size: larger;"><p>{{ i.stime }}</p></div>
-                                        <div class="aa" style="text-align: center; font-size: larger; font-style: italic;font-weight:bold;
+                                    <p class="font-weight-bold" style="font-size: 50px; color: #FFF;margin-left: 26%;">
+                                        {{ i.joined }}
+                                    </p>
+                                </div>
+                                <div class="col-md-8  col-sm-8 col-8" style="background-color:#dd7e7e;">
+                                    <div class="aa" style="font-size: larger;"><p>{{ i.stime }}</p></div>
+                                    <div class="aa" style="text-align: center; font-size: larger; font-style: italic;font-weight:bold;
                  background-color:#dd7e7e;margin-top:0;margin-bottom:0;border-radius: 0;"><p>to</p></div>
-                                        <div class="aa" style="font-size: larger;"><p>{{ i.etime }}</p></div>
-                                        <div class="aa" style="font-size: 30px;"><p>{{ i.location }}</p></div>
-                                    </div>
+                                    <div class="aa" style="font-size: larger;"><p>{{ i.etime }}</p></div>
+                                    <div class="aa" style="font-size: 30px;"><p>{{ i.location }}</p></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12 col-12" style="background-color:WhiteSmoke; border-bottom-left-radius:25px;height:60px;">
-                                <h4 style="font-size: 30px; font-weight: bold; margin-top:10px;">备注：{{ i.remarks }}</h4>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-12"
+                             style="background-color:WhiteSmoke; border-bottom-left-radius:25px;height:60px;">
+                            <h4 style="font-size: 30px; font-weight: bold; margin-top:10px;">备注：{{ i.remarks }}</h4>
                         </div>
                     </div>
-                    <div class="col-md-2 col-sm-2 col-2" style="background-color:#61be90; flex: auto; border-top-right-radius:25px;border-bottom-right-radius:25px;">
-                        <h3 class="text-center finished">{{ i.finished }}</h3>
-                    </div>
                 </div>
-
+                <div class="col-md-2 col-sm-2 col-2"
+                     style="background-color:#61be90; flex: auto; border-top-right-radius:25px;border-bottom-right-radius:25px;">
+                    <h3 class="text-center finished">{{ i.finished }}</h3>
+                </div>
             </div>
+
         </div>
     </div>
+</div>
 <script src="js/my.js"></script>
 </body>
 </html>
