@@ -19,16 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69ea8472-d4e5-4fcd-af7a-b6bc993bad08" name="Default Changelist" comment="rename join.html to search.html&#10;rename join.js to search.js">
-      <change afterPath="$PROJECT_DIR$/js/detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my.html" beforeDir="false" afterPath="$PROJECT_DIR$/my.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/详情001.html" beforeDir="false" />
-    </list>
+    <list default="true" id="69ea8472-d4e5-4fcd-af7a-b6bc993bad08" name="Default Changelist" comment="added jump url&#10;Roseccc: updated index.html" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +67,7 @@
       <workItem from="1607330300539" duration="15127000" />
       <workItem from="1607478987921" duration="1084000" />
       <workItem from="1607480081845" duration="10950000" />
-      <workItem from="1607657313937" duration="17322000" />
+      <workItem from="1607657313937" duration="17440000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1607479064693</created>
@@ -148,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607745388102</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added jump url&#10;Roseccc: updated index.html">
+      <created>1607840725665</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1607840725665</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,7 +175,8 @@
     <MESSAGE value="updated url" />
     <MESSAGE value="modify cards" />
     <MESSAGE value="rename join.html to search.html&#10;rename join.js to search.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename join.html to search.html&#10;rename join.js to search.js" />
+    <MESSAGE value="added jump url&#10;Roseccc: updated index.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="added jump url&#10;Roseccc: updated index.html" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607480134753">
