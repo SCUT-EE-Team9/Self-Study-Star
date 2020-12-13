@@ -43,7 +43,7 @@
             </ul>
         </div>
     </nav>
-    <div class="jumbotron text-center" style="margin-bottom:150px;;color: rgb(0, 132, 255) ;background-color: white">
+    <div class="jumbotron text-center" style="color: rgb(0, 132, 255) ;background-color: white">
         <h1>搜索自习</h1>
     </div>
 
@@ -84,17 +84,14 @@
           </form>
         </div>-->
 
-        <div class="clearfix" style="visibility:hidden;" style="margin-bottom: 15%">
+        <!--<div class="clearfix" style="visibility:hidden;" style="margin-bottom: 15%">
             <form>
                 <div class="input-group mb-3">
                     <label class="text">备注：</label>
-                    <!--<div class="input-group-prepend" >
-                      <span class="input-group-text">地点:</span>
-                    </div>-->
                     <input type="text" placeholder="此处可不填(〃'▽'〃)" class="form-control" style="border-radius:100px">
                 </div>
             </form>
-        </div>
+        </div>-->
     </div>
 
 
@@ -106,7 +103,7 @@
 
     <!--流光按钮-->
     <div class="parent" style="margin-bottom: 150px;">
-        <button v-on:click="search" class="button_a">查询</button>
+        <a v-on:click="search" class="button_a">查询</a>
     </div>
     <div v-for="i in info">
         <div class="container card_container" style="margin-top:25px;"
