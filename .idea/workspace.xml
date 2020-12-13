@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69ea8472-d4e5-4fcd-af7a-b6bc993bad08" name="Default Changelist" comment="bugs fixed">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/publish.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/publish.js" afterDir="false" />
+    <list default="true" id="69ea8472-d4e5-4fcd-af7a-b6bc993bad08" name="Default Changelist" comment="updated detail.html &amp; detail.js">
       <change beforePath="$PROJECT_DIR$/publish.html" beforeDir="false" afterPath="$PROJECT_DIR$/publish.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +69,7 @@
       <workItem from="1607330300539" duration="15127000" />
       <workItem from="1607478987921" duration="1084000" />
       <workItem from="1607480081845" duration="10950000" />
-      <workItem from="1607657313937" duration="26629000" />
+      <workItem from="1607657313937" duration="26748000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1607479064693</created>
@@ -201,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607846558461</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="updated detail.html &amp; detail.js">
+      <created>1607867014061</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1607867014061</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,7 +237,8 @@
     <MESSAGE value="added Navbar&#10;reformatted code" />
     <MESSAGE value="updated margin" />
     <MESSAGE value="bugs fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="bugs fixed" />
+    <MESSAGE value="updated detail.html &amp; detail.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated detail.html &amp; detail.js" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607480134753">
@@ -313,10 +317,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1099" height="231" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1603508327406" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607846561138">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607867020641">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607846561138" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607867020641" />
     <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607781228574">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
