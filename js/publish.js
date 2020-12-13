@@ -5,8 +5,8 @@ new Vue({
             username: null,
             stime: null,
             etime: null,
-            Location: null,
-            remarks: null,
+            Location: "",
+            remarks: "",
             info:null
         }
     },
