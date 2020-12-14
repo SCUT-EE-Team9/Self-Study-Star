@@ -2,12 +2,12 @@ new Vue({
     el: '#app1',
     data() {
         return {
-            username: null,
-            stime: null,
-            etime: null,
+            username: "",
+            stime: "",
+            etime: "",
             Location: "",
             remarks: "",
-            info: null
+            info: ""
         }
     },
     methods: {

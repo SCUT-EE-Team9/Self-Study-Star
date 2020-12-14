@@ -26,7 +26,9 @@ new Vue({
                     "location": "",
                     "remarks": "",
                     "joined": "加载中",
-                    "finished": "加载中"
+                    "finished": "加载中",
+                    "pname": "",
+                    "pmessage": ""
                 },
                 "joined": {}
             },
