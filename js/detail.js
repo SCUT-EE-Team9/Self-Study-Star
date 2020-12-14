@@ -15,7 +15,7 @@ new Vue({
     data() {
         return {
             tid: Number(getQueryVariable("tid")),
-            pname: null,
+            pname: "",
             pmessage: "",
             info: {
                 "detail": {
@@ -26,9 +26,7 @@ new Vue({
                     "location": "",
                     "remarks": "",
                     "joined": "加载中",
-                    "finished": "加载中",
-                    "pname": "",
-                    "pmessage": ""
+                    "finished": "加载中"
                 },
                 "joined": {}
             },
