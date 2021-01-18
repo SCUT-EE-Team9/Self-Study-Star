@@ -17,7 +17,7 @@ new Vue({
             .then(response => (this.info = response.data.bpi))*/
         axios({
             method: 'get',
-            url: 'http://127.0.0.1:8079/ks',
+            url: 'http://121.4.79.92:8080/ks',
             responseType: 'json'
         })
             .then(response => (this.info2 = response.data))
